@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>修仙小游戏 - 凡人修仙传</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="background-layer">
+      <img id="bg-image" src="assets/images/bg_open.png" alt="背景">
+    </div>
+    <div id="character-layer">
+      <img id="char-image" src="" alt="">
+    </div>
+    <div id="status-bar">
+      <span>修为：<span id="cultivation-val">0</span></span>
+      <span>声望：<span id="honor-val">0</span></span>
+      <span>灵力：<span id="spirit-val">0</span></span>
+      <span>魔性：<span id="demon-val">0</span></span>
+      <button id="bag-btn">🎒背包 (<span id="bag-count">0</span>)</button>
+    </div>
+    <div id="dialogue-box">
+      <p id="dialogue-text">点击屏幕开始修仙之旅</p>
+      <button id="start-btn">开始游戏</button>
+    </div>
+    <div id="bag-modal" class="modal-overlay" style="display:none;">
+      <div class="modal-box">
+        <h3>我的背包</h3>
+        <div id="bag-item-list">空空如也</div>
+        <button id="bag-close-btn">关闭</button>
+      </div>
+    </div>
+  </div>
+  <audio id="bgm" loop preload="auto">
+    <source src="assets/audio/bgm_title.mp3" type="audio/mpeg">
+  </audio>
+  <!-- 剧情数据文件 -->
+  <script src="story_chapter1.js"></script>
+  <script src="story_chapter2.js"></script>
+  <script src="story_chapter3.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
