@@ -32,7 +32,7 @@ const endingMap = {
   check_endings: function() {
     const st = gameState.attributes;
     if (st.demon >= 80 && gameState.inventory.includes("幻影镜")) return "ending_demon_lord";
-    if (st.honor >= 60 && gameState.inventory.includes("狐族玉佩") && gameState.inventory.includes("幻影镜")) return "ending_harem";
+    if (st.honor >= 60 && gameState.inventory.includes("天狐玉") && gameState.inventory.includes("幻影镜")) return "ending_harem";
     if (st.honor >= 50) return "ending_good_fly";
     if (st.demon > 50) return "ending_alone_demon";
     return "ending_alone_good";
